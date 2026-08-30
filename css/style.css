@@ -1,0 +1,489 @@
+/* ==============================
+   BASE
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+a {
+    color: #2563eb;
+}
+
+h1,
+h2,
+h3 {
+    color: #0f172a;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* ==============================
+   AUTHENTICATION
+============================== */
+
+.auth-container {
+    width: 90%;
+    max-width: 420px;
+
+    margin: 60px auto;
+    padding: 30px;
+
+    background: white;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.auth-container h1,
+.auth-container h2 {
+    margin-top: 0;
+}
+
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+nav {
+    background: #0f172a;
+    color: white;
+
+    padding: 15px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav strong {
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.user-name {
+    color: #cbd5e1;
+}
+
+
+/* ==============================
+   FORMS
+============================== */
+
+label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+
+    background: white;
+
+    color: #1e293b;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 11px 16px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.transaction-form {
+    max-width: 600px;
+
+    padding: 25px;
+
+    background: white;
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==============================
+   MESSAGES
+============================== */
+
+.message {
+    margin-bottom: 20px;
+    padding: 12px;
+
+    border-radius: 5px;
+}
+
+.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+
+/* ==============================
+   BUTTON LINKS
+============================== */
+
+.button-link {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==============================
+   DASHBOARD
+============================== */
+
+.summary-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+}
+
+.summary-card {
+    padding: 22px;
+
+    background: white;
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+.summary-card p {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.income {
+    color: #15803d;
+}
+
+.expense {
+    color: #dc2626;
+}
+
+
+/* ==============================
+   PAGE HEADER
+============================== */
+
+.page-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   TABLES
+============================== */
+
+.table-wrapper {
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background: #f8fafc;
+    color: #475569;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ==============================
+   FILTERS
+============================== */
+
+.filter-form {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.filter-form label {
+    margin-top: 0;
+}
+
+.filter-actions {
+    display: flex;
+
+    align-items: end;
+
+    gap: 10px;
+}
+
+.filter-actions button {
+    width: auto;
+    margin: 0;
+}
+
+.reset-button {
+    display: inline-block;
+
+    padding: 11px 16px;
+
+    background: #64748b;
+    color: white;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.reset-button:hover {
+    background: #475569;
+}
+
+
+/* ==============================
+   INLINE / DELETE / NAV BUTTONS
+============================== */
+
+.inline-form {
+    display: inline;
+}
+
+.inline-form button {
+    width: auto;
+}
+
+.delete-button {
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    color: #dc2626;
+
+    font-size: inherit;
+}
+
+.delete-button:hover {
+    background: none;
+    text-decoration: underline;
+}
+
+.nav-button {
+    width: auto;
+
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    color: white;
+
+    font-size: inherit;
+
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: none;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 900px) {
+
+    .filter-form {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .auth-container {
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-actions {
+        align-items: stretch;
+    }
+
+    .filter-actions button,
+    .reset-button {
+        width: 100%;
+        text-align: center;
+    }
+}

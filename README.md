@@ -16,7 +16,7 @@ The application allows users to create an account, securely log in, manage perso
 
 ### Add Transaction
 
-![Add Transaction](screenshots/Add transaction_tracker.png)
+![Add Transaction](screenshots/Add_transaction_tracker.png)
 
 ### Login
 

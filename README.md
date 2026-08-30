@@ -8,15 +8,20 @@ The application allows users to create an account, securely log in, manage perso
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard_tracker.png)
 
 ### Transactions
 
-![Transactions](screenshots/transactions.png)
+![Transactions](screenshots/Transactions_tracker.png)
 
 ### Add Transaction
 
-![Add Transaction](screenshots/add-transaction.png)
+![Add Transaction](screenshots/Add transaction_tracker.png)
+
+### Login
+
+![Login](screenshots/login_tracker.png)
+
 
 ## Features
 

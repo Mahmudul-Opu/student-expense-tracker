@@ -4,6 +4,11 @@ A full-stack web application for students to track income and expenses, built us
 
 The application allows users to create an account, securely log in, manage personal financial transactions, search and filter transaction history, and view financial summaries.
 
+
+## Live Demo
+
+[View Live Demo](https://student-expense-tracker.free.nf/)
+
 ## Screenshots
 
 ### Dashboard
